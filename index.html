@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>AEG TOUR</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary pt-4 pb-4" id="navbar-section">
+            <div class="container">
+                <a class="navbar-brand fw-bolder text-white" href="#">AEG TOURS</a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#package">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#tour-inf">Trips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#comments">Comments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="carousal-section">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item" data-bs-interval="3000">
+                    <img src="https://www.gamintraveler.com/wp-content/uploads/2020/03/Cappadocia-Turkey.jpg" class="d-block w-100 c-img" alt="..." />
+                    <div class="carousel-caption top-0 Pt-5">
+                        <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p>
+                        <h1 class="display-1 text-capitalize fw-bolder">Cappadocia</h1>
+                        <button type="button" class="book-tour mt-5 px-4 py-2 btn btn-primary">
+                Book a Tour
+              </button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item" data-bs-interval="3000">
+                    <img src="https://www.yaz-tatili.com/wp-content/uploads/Nemrut-Da%C4%9F%C4%B1.jpg" class="d-block w-100 c-img" alt="..." />
+                    <div class="carousel-caption top-0 Pt-5">
+                        <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p>
+                        <h1 class="display-1 text-capitalize fw-bolder">Nemrut</h1>
+                        <button type="button" class="book-tour mt-5 px-4 py-2 btn btn-primary">
+                Book a Tour
+              </button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item" data-bs-interval="3000">
+                    <img src="https://besthqwallpapers.com/Uploads/13-9-2020/140975/library-of-celsus-ephesus-ancient-building-evening-sunset.jpg" class="d-block w-100 c-img" alt="..." />
+                    <div class="carousel-caption top-0 Pt-5">
+                        <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p>
+                        <h1 class="display-1 text-capitalize fw-bolder">Efes</h1>
+                        <button type="button" class="book-tour mt-5 px-4 py-2 btn btn-primary">
+                Book a Tour
+              </button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+    <section class="tour-company-inf container-fluid">
+        <div class="row pt-5 text-center pb-5 fw-semibold fs-5">
+            <div class="col-12 col-md-4 col-lg-4 py-1 px-1">
+                <p><i class="fa-solid fa-location-dot"></i> 3 Amazing Destination</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 py-1 px-1">
+                <p><i class="fa-solid fa-suitcase"></i> Only Pay 5% Up Front</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 py-1 px-1">
+                <p><i class="fa-solid fa-user"></i> 1000's of Customers</p>
+            </div>
+        </div>
+    </section>
+    <section class="packages container" id="package">
+        <h1 class="text-center pt-5 pb-5 fw-bolder fs-1">PACKAGES</h1>
+        <div class="row fw-semibold fs-5">
+            <div class="col-12 col-md-12 col-lg-4 py-3 px-3">
+                <div class="card mt-3 mb-3 mx-auto h-100">
+                    <img src="https://www.gamintraveler.com/wp-content/uploads/2020/03/Cappadocia-Turkey.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Cappadocia, Nevşehir - $250</h5>
+                        <p class="card-text fw-normal">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#package" class="btn btn-primary">Book Tour</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 py-3 px-3">
+                <div class="card mt-3 mb-3 mx-auto h-100">
+                    <img src="https://en.antaliy.com/wp-content/uploads/2022/08/Discover-History-Here-Places-to-Visit-in-Selcuk-Izmir.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Efes City, İzmir - $250</h5>
+                        <p class="card-text fw-normal">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#package" class="btn btn-primary">Book Tour</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 py-3 px-3">
+                <div class="card mt-3 mb-3 mx-auto h-100">
+                    <img src="https://www.gezilesiyer.com/wp-content/uploads/2020/03/adiyaman.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Nemrut, Adıyaman - $250</h5>
+                        <p class="card-text fw-normal">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#package" class="btn btn-primary ">Book Tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us pt-5 mt-5 pb-3" id="tour-inf">
+        <div class="container ">
+            <h1 class="text-center pb-5 fw-bolder fs-1">TRIPS</h1>
+            <div class="row d-flex justify-content-center px-5">
+                <div class="col-12 col-md-12 col-lg-6 px-3 py-4">
+                    <div class="content-img">
+                        <img src="https://class-tour.com/wp-content/uploads/0/2/e/02e7d03e37553e94c15d8940b33755e6.jpeg" class="img-thumbnail img-ca" alt="..." />
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 px-3 py-4">
+                    <div class="content-p" style="border: 2px solid black; border-radius: 10px">
+                        <h3 class="text-center py-2 pt-5 fw-semibold">
+                            Efes Antique City
+                        </h3>
+                        <p class="fs-5 fw-normal text-center fl-1 py-2 px-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat similique saepe quo laboriosam modi, ea iure illum. Saepe beatae odit iusto, autem ipsa at fugiat adipisci cupiditate rem quis esse ab ipsam quia quod ratione quaerat facere ad. Fugiat,
+                            laboriosam.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg mx-auto d-grid mt-5 mb-4">
+                Read More
+              </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center px-5">
+                <div class="col-12 col-md-12 col-lg-6 px-3 py-4 order-1 order-md-1 order-lg-2">
+                    <div class="content-img">
+                        <img src="https://mediap.flypgs.com/awh/1254/836/files/Sehirler-long-tail/Kapadokya/kapadokya-nerede-kalinir.jpg" class="img-thumbnail img-ca" alt="..." />
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 px-3 py-4 order-2 order-md-2 order-lg-1">
+                    <div class="content-p" style="border: 2px solid black; border-radius: 10px">
+                        <h3 class="text-center py-2 pt-5 fw-semibold">Cappadocia</h3>
+                        <p class="fs-5 fw-normal text-center fl-1 py-2 px-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat similique saepe quo laboriosam modi, ea iure illum. Saepe beatae odit iusto, autem ipsa at fugiat adipisci cupiditate rem quis esse ab ipsam quia quod ratione quaerat facere ad. Fugiat,
+                            laboriosam.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg mx-auto d-grid mt-5 mb-4">
+                Read More
+              </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center px-5">
+                <div class="col-12 col-md-12 col-lg-6 px-3 py-4">
+                    <div class="content-img mb-3">
+                        <img src="https://blog.obilet.com/wp-content/uploads/2021/11/Adiyaman-Gun-Batimi-scaled.jpeg" class="img-thumbnail img-ca" alt="..." />
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 px-3 py-4">
+                    <div class="content-p" style="border: 2px solid black; border-radius: 10px">
+                        <h3 class="text-center py-2 pt-5 fw-semibold">Nemrut Mountain</h3>
+                        <p class="fs-5 fw-normal text-center fl-1 py-2 px-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat similique saepe quo laboriosam modi, ea iure illum. Saepe beatae odit iusto, autem ipsa at fugiat adipisci cupiditate rem quis esse ab ipsam quia quod ratione quaerat facere ad. Fugiat,
+                            laboriosam.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg mx-auto d-grid mt-5 mb-4">
+                Read More
+              </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comment-section container" id="comments">
+        <div>
+            <h1 class="text-center py-5 fw-bolder fs-1">COMMENTS</h1>
+        </div>
+        <div class="row pb-5 justify-content-center">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 py-3 px-3">
+                <div class="card-c card h-100 w-100 ">
+                    <div class="img-fix mx-auto mt-4">
+                        <img src="https://www.lyon-photo.fr/wp-content/uploads/2020/01/photo-cv-lyon-recrutement.jpg" class="card-img-top comments-img" alt="..." />
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text py-2 text-white text-center">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem similique accusantium eius modi praesentium velit facere. Est impedit mollitia repellat tenetur beatae, suscipit quaerat ad?
+                        </p>
+                    </div>
+                    <div class="icons text-center pb-4">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 py-3 px-3">
+                <div class="card-c card h-100 w-100 ">
+                    <div class="img-fix mx-auto mt-4">
+                        <img src="https://maphotoportrait.fr/1387-thickbox_default/meilleurs-tarifs-de-photos-pour-portrait-business-cv-reseaux-sociaux-linkedin.jpg" class="card-img-top comments-img" alt="..." />
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text py-2 text-white text-center">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, provident neque! Eaque cupiditate non impedit deserunt voluptatibus beatae cum fugit vitae, a repudiandae esse nemo, velit inventore est incidunt ut!
+                        </p>
+                    </div>
+                    <div class="icons text-center pb-4">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 py-3 px-3">
+                <div class="card-c card h-100 w-100 ">
+                    <div class="img-fix mx-auto mt-4">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLTWot5AmZcz7ccbAofPcgN3ZQMfbQd_KbiMaXf3_A=s900-c-k-c0x00ffffff-no-rj" class="card-img-top comments-img" alt="..." />
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text py-2 text-white text-center">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, provident neque! Eaque cupiditate non impedit deserunt voluptatibus beatae cum fugit vitae, a repudiandae esse nemo, velit inventore est incidunt ut!
+                        </p>
+                    </div>
+                    <div class="icons text-center pb-4">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 py-3 px-3">
+                <div class="card-c card h-100 w-100 ">
+                    <div class="img-fix img-fix mx-auto mt-4">
+                        <img src="https://www.lyon-photo.fr/wp-content/uploads/2016/01/photo-cv-asiatique.jpg" class="card-img-top comments-img" alt="..." />
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text py-2 text-white text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, praesentium et vel placeat aspernatur recusandae? Nobis odit rerum aperiam necessitatibus!
+                        </p>
+                    </div>
+                    <div class="icons text-center pb-4">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="faq container-fluid">
+        <div>
+            <h1 class="text-center pt-5 pb-4 fw-bolder fs-1">
+                FAQ<i class="fa-solid fa-question"></i>
+            </h1>
+        </div>
+        <div>
+            <div class="row pb-5 px-5 mx-5">
+                <div class="col-12 col-md-12 col-lg-12 pb-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How long are the trips?
+                  </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Is the flight included?
+                  </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can I cancel after booking?
+                  </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="social-medias container-fluid">
+        <h1 class="s-m text-center pt-5 pb-4 fw-bolder fs-1">SOCIAL MEDIA ACCOUNTS</h1>
+        <div class="row justify-content-center ">
+            <div class="col-2 col-md-2 col-lg-2 px-3 mx-1">
+                <div class="links text-center pb-5">
+                    <a href="https://www.instagram.com/thegecgin/"><i class="fa-brands fa-instagram fa-3x" style="color: #050505;"></i></a>
+                </div>
+            </div>
+            <div class="col-2 col-md-2 col-lg-2 px-3 mx-1">
+                <div class="links text-center pb-5">
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-3x" style="color: #212121;"></i></i></a>
+                </div>
+            </div>
+            <div class="col-2 col-md-2 col-lg-2 px-3 mx-1">
+                <div class="links text-center pb-5">
+                    <a href="https://www.linkedin.com/in/emir-geçgin-4355271b0/"><i class="fa-brands fa-linkedin fa-3x" style="color: #050505;"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section container-fluid">
+        <div class="text-center display-6 pt-5 fw-bold">
+            <p>AEG-TOURS</p>
+        </div>
+        <div class="copy-right text-center pb-4 fw-normal">
+            <small>Copyright by AEG. All rights reserved.</small>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+#navbar-section {
+    background-color: rgb(53, 53, 53) !important;
+}
+
+.carousel slide {
+    height: 100px!important;
+}
+
+.c-item {
+    height: 70vh !important;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.book-tour {
+    font-size: 1rem !important;
+}
+
+.tour-company-inf {
+    background-color: rgb(158, 157, 157) !important;
+}
+
+.about-us {
+    background-color: rgb(158, 157, 157) !important;
+}
+
+.img-ca {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.faq {
+    background-color: rgb(158, 157, 157) !important;
+}
+
+.accordion-button {
+    background-color: rgb(158, 157, 157) !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:hover {
+    background-color: rgb(186, 185, 185) !important;
+}
+
+.footer-section {
+    background-color: rgb(53, 53, 53) !important;
+    color: white;
+}
+
+.card-img-top {
+    height: 40vh !important;
+}
+
+.form-control {
+    width: 50% !important;
+}
+
+.comments-img {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 90px !important;
+}
+
+.img-fix {
+    height: 150px !important;
+    width: 150px !important;
+}
+
+.card-c {
+    background-color: rgb(53, 53, 53) !important;
+}
